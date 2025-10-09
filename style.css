@@ -1,5 +1,5 @@
 body {
-    bacground-color: #87CEFA;
+    background-color: #87CEFA;
     font-family: Times New Roman,serif;
     color: #9932CC;
 }
@@ -7,7 +7,7 @@ body {
      width: 300px;
      margin: 50px auto;
      padding: 20px;
-     bacground-color: black;
+     background-color: black;
      border-radius: 15px;
      box-shadow: 0 4px 8px rgba(0,0,0,0,1);
      text-align: center;
