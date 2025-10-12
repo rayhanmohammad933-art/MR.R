@@ -1,0 +1,237 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif; /* Font utama untuk badan teks */
+    line-height: 1.7;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px; /* Lebar optimal untuk membaca */
+    margin: 0 auto;
+}
+
+a {
+    color: #3f51b5; /* Biru kalem */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1a237e;
+}
+
+/* --- Header & Navigasi --- */
+header {
+    background: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a237e;
+}
+
+nav a {
+    color: #555;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; /* Font sans-serif untuk navigasi */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    width: 80%;
+    max-width: 400px;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: #eef1f6;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* --- Konten Utama & Layout --- */
+main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3f51b5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.main-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.article-list {
+    flex: 3; /* Kolom artikel lebih lebar */
+}
+
+.sidebar {
+    flex: 1; /* Kolom sidebar lebih sempit */
+    padding-top: 10px;
+}
+
+/* Post Card Styling */
+.post-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.post-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #3f51b5;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.excerpt {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.read-more {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+/* Sidebar Widgets */
+.widget {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.widget h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.widget button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.widget button:hover {
+    background-color: #1a237e;
+}
+
+/* --- Footer --- */
+footer {
+    background: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #eef1f6;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column; /* Tumpuk artikel dan sidebar */
+    }
+
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .quote {
+        font-size: 1.8rem;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-content .logo {
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
