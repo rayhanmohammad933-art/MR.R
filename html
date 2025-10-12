@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Hening - Blog Sastra & Puisi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <h1 class="logo">Kata Hening 🖋️</h1>
+            <nav>
+                <a href="#terbaru">Terbaru</a>
+                <a href="#arsip">Arsip</a>
+                <a href="#penulis">Penulis</a>
+                <a href="#" id="search-toggle">Cari <i class="fas fa-search"></i></a>
+            </nav>
+        </div>
+        <div id="search-bar" class="search-bar" style="display: none;">
+            <input type="text" placeholder="Cari puisi, cerpen, atau esai...">
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <blockquote class="quote">
+                "Setiap kata adalah jejak, setiap kalimat adalah perjalanan."
+            </blockquote>
+            <p class="author">— Anonim</p>
+        </div>
+    </section>
+
+    <main id="terbaru" class="container">
+        <h2>Karya Terbaru</h2>
+        <div class="main-layout">
+            
+            <section class="article-list">
+                
+                <article class="post-card">
+                    <h3>Filosofi Hujan dan Kopi Pagi</h3>
+                    <p class="meta">Oleh: Risa L. | 10 Oktober 2025 | Cerpen</p>
+                    <p class="excerpt">Hujan selalu membawa narasi yang tak terucapkan. Ia bukan hanya air, melainkan jeda yang diberikan alam untuk merenungkan segala yang terburu-buru. Di balik jendela yang buram, kopi mengepulkan janji ketenangan....</p>
+                    <a href="post-1.html" class="read-more">Baca Selengkapnya</a>
+                </article>
+                
+                <article class="post-card">
+                    <h3>Senja di Balik Kota yang Sunyi</h3>
+                    <p class="meta">Oleh: Sena Putra | 8 Oktober 2025 | Puisi</p>
+                    <p class="excerpt">Di antara gedung-gedung yang bisu, senja melukis kanvas kelabu. Jiwa-jiwa yang pulang membawa beban, namun mata tetap mencari bintang yang tak kunjung datang....</p>
+                    <a href="post-2.html" class="read-more">Baca Selengkapnya</a>
+                </article>
+
+                <article class="post-card">
+                    <h3>Esai: Kecemasan Digital dan Kehilangan Fiksi</h3>
+                    <p class="meta">Oleh: Tim Editor | 5 Oktober 2025 | Esai</p>
+                    <p class="excerpt">Di era notifikasi tak berujung, kemampuan kita untuk menikmati narasi panjang mulai terkikis. Esai ini mendalami dampak kecepatan informasi terhadap apresiasi sastra...</p>
+                    <a href="post-3.html" class="read-more">Baca Selengkapnya</a>
+                </article>
+
+            </section>
+
+            <aside class="sidebar">
+                <div class="widget" id="arsip">
+                    <h4>Arsip Kategori</h4>
+                    <ul>
+                        <li><a href="#">Puisi Kontemporer (15)</a></li>
+                        <li><a href="#">Cerpen Mini (22)</a></li>
+                        <li><a href="#">Esai Kritis (8)</a></li>
+                        <li><a href="#">Resensi Buku (12)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="widget" id="penulis">
+                    <h4>Penulis Pilihan</h4>
+                    <p>Temui suara-suara di balik kata-kata kami. Setiap bulan, kami menyoroti penulis baru.</p>
+                    <button id="show-authors-btn">Lihat Semua</button>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kata Hening. Hak Cipta Sastra Dilindungi. | <a href="#">Kebijakan Privasi</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
